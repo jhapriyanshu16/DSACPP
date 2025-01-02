@@ -807,3 +807,132 @@ using namespace std;
 //         cout<<endl;
 //     }
 // }
+
+
+//Pascal Triangle
+// int factorial(int n){
+//     int fact = 1;
+//     for(int i=1; i <= n ; i++){
+//         fact *= i;
+//     }
+//     return fact;
+// }
+// int nCr(int n , int r){
+//     int value = factorial(n)/(factorial(r)*factorial(n-r));
+//     return value;
+// }
+// int main(){
+//     int n;
+//     cout<< "Enter the value of n: ";
+//     cin>>n;
+//     for(int i = 0 ; i <= n ; i++){
+//         for (int j = 0 ; j<=n-i-1 ; j++){
+//             cout<<" ";
+//         }
+//         for(int j = 0 ; j <= i ; j++){
+//             cout<<nCr(i,j)<<" ";
+//         }
+        
+//         cout<<endl;
+//     }
+// }
+
+
+//swapping numbers using pass by reference
+// void swap(int* a, int* b){
+//         int temp=*a;
+//         *a = *b;
+//         *b= temp;
+// }
+// int main(){
+//     int x,y;
+//     cout<< "Enter the value of x: ";
+//     cin>>x;
+//     cout<< "Enter the value of y: ";
+//     cin>>y;
+//     cout<<"The value of x is "<<x<<" and the value of y is "<<y<<endl;
+//     swap(&x,&y);
+//     cout<<"After swapping the value of x is "<<x<<" and the value of y is "<<y<<endl;
+// }
+
+
+//Recursion
+//Factorial
+// int fact(int x){
+//     if (x==1 || x==0){
+//         return 1;
+//     }
+//     return x * fact(x-1);
+// }
+// int main(){
+//     cout<<fact(5);
+// }
+//Program which calculates a^b 
+// int aEb(int base, int exp){
+//     if (exp == 0){
+//         return 1;
+//     }
+//     return base * aEb(base,exp-1);
+// }
+// int main(){
+//     cout<<aEb(4,2);
+// }
+//Fibonacci series upto n
+// int fib(int n){
+//     if (n==1 || n==2){
+//         return 1;
+//     }
+//     return fib(n-1)+fib(n-2);
+// }
+// int main(){
+//     cout<<fib(5);
+// }
+
+
+//Arrays
+//Finding maximum element in a given array
+// int max(int arr[],int size){
+//     int maxElement = arr[0];
+//     for (int i = 0 ; i < size; i++ ){
+//         if(arr[i]>maxElement){
+//             maxElement = arr[i];
+//         }
+//     }
+//     return maxElement;
+// }
+// int main(){
+//     int arr[] = {1,2,12,4,5};
+//     int size = sizeof(arr) / sizeof(arr[0]);
+//     cout<<"Maximum element : " << max(arr,size);
+// }
+//Program to copy the content of one array into another in the reverse order
+// int main(){
+// int arr1[] = {1,2,3,4,5};
+// int size = sizeof(arr1)/(sizeof(arr1[0]));
+// int arr2[size];
+// for(int i = 0 ; i<size ; i++){
+//     arr2[i] = arr1[size-i-1];
+// }
+// for(int i = 0 ; i<size ; i++){
+//    cout<< arr2[i]<<" ";
+// }
+// }
+
+//String
+// int main(){
+//     string s = "Hello";
+//     cout<<s;
+// }
+// int main(){
+//     string s;
+//     //cin>>s;  //Giving input: Hello world will only print first word "Hello"
+//     getline(cin,s); //to take input after spaces too
+//     cout<<s<<endl;
+//     cout<<s.length()<<endl;
+//     s.push_back('a') ;//adds a char at end of string
+//     cout<<s<<endl;
+//     s.pop_back() ;//remove a char from end of string
+//     cout<<s<<endl;
+//     s.append("hello"); //appends a string
+//     cout<<s<<endl;
+// }
