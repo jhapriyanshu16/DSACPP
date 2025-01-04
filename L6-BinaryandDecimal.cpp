@@ -21,7 +21,7 @@
 //     return 0;
 // }
 
-
+//Program to convert binary to decimal
 #include <iostream>
 using namespace std;
 
